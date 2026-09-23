@@ -1,46 +1,243 @@
+/* TechReg Observatory — professional prototype style */
+
+:root {
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --text: #17202a;
+  --muted: #5f6f82;
+  --primary: #0b1f33;
+  --primary-light: #123a5c;
+  --accent: #2f6fed;
+  --border: #dce4ee;
+  --shadow: 0 12px 30px rgba(11, 31, 51, 0.08);
+  --radius: 14px;
+  --max-width: 1120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  color: #1f2933;
-  background: #f7f9fb;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
   line-height: 1.6;
 }
 
-header {
-  background: #0b1f33;
-  color: white;
-  padding: 48px 12%;
+a {
+  color: var(--accent);
+  text-decoration: none;
 }
 
-header h1 {
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+
+.hero {
+  background:
+    linear-gradient(135deg, rgba(11, 31, 51, 0.96), rgba(18, 58, 92, 0.94)),
+    radial-gradient(circle at top right, rgba(47, 111, 237, 0.25), transparent 35%);
+  color: #ffffff;
+  padding: 76px 24px;
+}
+
+.hero-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #b9d3ff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 850px;
   margin: 0;
-  font-size: 42px;
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
 }
 
-header p {
+.subtitle {
+  max-width: 760px;
+  margin: 24px 0 0;
+  color: #dbe8f8;
   font-size: 20px;
-  margin-top: 12px;
 }
+
+/* Buttons */
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.button.primary {
+  background: #ffffff;
+  color: var(--primary);
+}
+
+.button.secondary {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+}
+
+.button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* Main layout */
 
 main {
-  padding: 40px 12%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 46px 24px 64px;
 }
 
-section {
-  background: white;
-  margin-bottom: 24px;
-  padding: 28px;
+.section {
+  margin-bottom: 28px;
+  padding: 34px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  color: var(--primary);
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.section p {
+  max-width: 880px;
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Cards */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card {
+  min-height: 180px;
+  padding: 24px;
+  background: #f8fbff;
+  border: 1px solid var(--border);
   border-radius: 12px;
-  border: 1px solid #e1e7ef;
 }
 
-h2 {
-  margin-top: 0;
-  color: #0b1f33;
+.card h3 {
+  margin: 0 0 10px;
+  color: var(--primary);
+  font-size: 19px;
 }
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Scope list */
+
+.scope-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.scope-list li {
+  padding: 14px 16px;
+  background: #f8fbff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Status */
+
+.status {
+  border-left: 5px solid var(--accent);
+}
+
+/* Footer */
 
 footer {
-  padding: 24px 12%;
+  padding: 28px 24px;
   background: #e8eef5;
+  color: var(--muted);
+  text-align: center;
   font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scope-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero {
+    padding: 56px 20px;
+  }
+
+  main {
+    padding: 28px 18px 48px;
+  }
+
+  .section {
+    padding: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
 }
