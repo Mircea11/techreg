@@ -3,259 +3,786 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechReg Observatory</title>
-  <meta name="description" content="TechReg Observatory helps European AI developers, companies, students and professionals understand EU AI, data and cybersecurity regulation.">
+
+  <title>TechReg — European Tech Regulation Observatory</title>
+
+  <meta
+    name="description"
+    content="TechReg is a practical regulatory intelligence platform for European AI, data and cybersecurity regulation."
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
   <header class="site-header">
-    <nav class="nav">
-      <a href="#" class="brand">TechReg</a>
+
+    <nav class="top-nav">
+
+      <a href="#" class="brand">
+        <span class="brand-tech">Tech</span><span class="brand-reg">Reg</span>
+      </a>
+
+      <span class="brand-subtitle">
+        EU Tech Regulation Observatory
+      </span>
+
       <div class="nav-links">
-        <a href="#mission">Mission</a>
-        <a href="#users">Users</a>
-        <a href="#scope">Scope</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#modules">Modules</a>
+        <a href="#" class="active">Home</a>
+        <a href="#regulations">Regulations</a>
+        <a href="#workflow">Tools</a>
         <a href="#status">Status</a>
+        <a href="#mission">About</a>
       </div>
+
+      <div class="nav-actions">
+
+        <div class="search-placeholder">
+          <span class="search-icon">⌕</span>
+          <span>Search regulations, topics, or sectors...</span>
+        </div>
+
+        <a class="nav-button secondary-button" href="#status">
+          Log in
+        </a>
+
+        <a class="nav-button primary-button" href="#regulations">
+          Get started
+        </a>
+
+      </div>
+
     </nav>
+
   </header>
 
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+
   <section class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">TechReg by Sinapsa</p>
-      <h1>AI, Data & Cybersecurity Regulation Observatory</h1>
-      <p class="subtitle">
-        A practical regulatory intelligence workspace helping European AI developers,
-        companies, students and professionals turn complex EU digital regulation into
-        clear implementation actions.
-      </p>
-      <div class="hero-actions">
-        <a href="#mission" class="button primary">Explore the mission</a>
-        <a href="#scope" class="button secondary">View regulatory scope</a>
+
+    <div class="hero-grid">
+
+      <!-- Main hero -->
+
+      <div class="hero-main">
+
+        <div class="hero-content">
+
+          <div class="signal-line">
+            <span class="signal-dot"></span>
+            <span>SIGNAL</span>
+            <span class="signal-arrow">›</span>
+            <span>MONITOR</span>
+            <span class="signal-arrow">›</span>
+            <span>UNDERSTAND</span>
+            <span class="signal-arrow">›</span>
+            <span>PREPARE</span>
+          </div>
+
+          <h1>
+            AI, Data &amp; Cybersecurity
+            <span>Regulation Observatory</span>
+          </h1>
+
+          <p class="hero-description">
+            A practical intelligence platform tracking European tech regulation
+            for developers, companies and professionals — from early signals to
+            implementation.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#regulations" class="hero-button hero-button-primary">
+              Explore the platform
+              <span>→</span>
+            </a>
+
+            <a href="#workflow" class="hero-button hero-button-secondary">
+              View regulatory map
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
+
+
+      <!-- Featured regulations -->
+
+      <aside class="featured-panel">
+
+        <article class="featured-card featured-new">
+
+          <div class="featured-content">
+            <span class="featured-label">New</span>
+            <strong>EU AI Act</strong>
+            <small>Implementation phase</small>
+          </div>
+
+          <span class="card-arrow">›</span>
+
+        </article>
+
+
+        <article class="featured-card featured-updated">
+
+          <div class="featured-content">
+            <span class="featured-label">Updated</span>
+            <strong>NIS2 Guidance</strong>
+            <small>New Q&amp;A published</small>
+          </div>
+
+          <span class="card-arrow">›</span>
+
+        </article>
+
+
+        <article class="featured-card featured-focus">
+
+          <div class="featured-content">
+            <span class="featured-label">In focus</span>
+            <strong>Data Act</strong>
+            <small>Operational relevance</small>
+          </div>
+
+          <span class="card-arrow">›</span>
+
+        </article>
+
+      </aside>
+
+
+      <!-- Regulatory activity -->
+
+      <aside class="activity-panel">
+
+        <div class="activity-header">
+
+          <span>Regulatory activity</span>
+
+          <span class="live-indicator">
+            <span class="live-dot"></span>
+            Live
+          </span>
+
+        </div>
+
+
+        <div class="activity-card">
+
+          <div class="activity-icon">▣</div>
+
+          <strong>3</strong>
+
+          <span>
+            New updates<br>
+            this week
+          </span>
+
+        </div>
+
+
+        <div class="activity-card">
+
+          <div class="activity-icon">◎</div>
+
+          <strong>12</strong>
+
+          <span>
+            Active<br>
+            consultations
+          </span>
+
+        </div>
+
+
+        <div class="activity-card">
+
+          <div class="activity-icon">▦</div>
+
+          <strong>8</strong>
+
+          <span>
+            Upcoming<br>
+            deadlines
+          </span>
+
+        </div>
+
+
+        <div class="activity-card">
+
+          <div class="activity-icon">↗</div>
+
+          <strong>28</strong>
+
+          <span>
+            Tracked<br>
+            regulations
+          </span>
+
+        </div>
+
+      </aside>
+
     </div>
+
   </section>
 
-  <main>
 
-    <section id="mission" class="section intro-section">
-      <div>
-        <h2>Mission</h2>
-        <p>
-          TechReg Observatory aims to reduce the burden of regulatory monitoring for European
-          organisations by translating AI, data and cybersecurity regulation into clear guidance,
-          obligation maps, controls, dashboards and source-based assistance.
+  <!-- =========================================================
+       MAIN CONTROL ROOM
+       ========================================================= -->
+
+  <main class="control-room">
+
+
+    <!-- Mission -->
+
+    <section id="mission" class="control-row mission-row">
+
+      <div class="row-identity">
+
+        <div class="row-icon">
+          ◎
+        </div>
+
+        <div class="row-heading">
+
+          <span class="row-kicker">
+            Mission
+          </span>
+
+          <h2>
+            Our purpose
+          </h2>
+
+          <p>
+            From legal complexity to<br>
+            practical intelligence.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="row-content mission-content">
+
+        <p class="mission-statement">
+          TechReg provides clear, structured and up-to-date intelligence on
+          European tech regulation. We translate legal developments into
+          practical insights for real-world implementation.
         </p>
-        <p>
-          The objective is not to add another layer of bureaucracy. The objective is to help
-          European AI developers and companies move faster with clarity, while addressing legal
-          concerns, public trust and responsible innovation.
-        </p>
+
+
+        <div class="mission-principles">
+
+          <div class="principle">
+            <span class="principle-icon">◇</span>
+            <span>Shielded against noise</span>
+          </div>
+
+          <div class="principle">
+            <span class="principle-icon">▱</span>
+            <span>Independent and structured</span>
+          </div>
+
+          <div class="principle">
+            <span class="principle-icon">ϟ</span>
+            <span>From signals to action</span>
+          </div>
+
+        </div>
+
       </div>
 
-      <aside class="mission-note">
-        <strong>Core idea</strong>
-        <p>
-          Regulation should become an operating system for trust, quality and competitiveness,
-          not only an administrative burden.
-        </p>
-      </aside>
     </section>
 
-    <section id="users" class="section">
-      <h2>Who it is for</h2>
-      <p>
-        TechReg is designed for both practical implementation and education. It should help users
-        move from basic understanding to professional application.
-      </p>
 
-      <div class="grid">
-        <article class="card">
-          <h3>AI developers</h3>
-          <p>Fast orientation on applicable rules, documentation needs and risk controls.</p>
-        </article>
-        <article class="card">
-          <h3>Companies</h3>
-          <p>Support for SMEs, industrial firms and larger organisations implementing EU rules.</p>
-        </article>
-        <article class="card">
-          <h3>Students</h3>
-          <p>Structured entry point for law, regulatory, IT, cybersecurity, data and AI students.</p>
-        </article>
-        <article class="card">
-          <h3>Specialists</h3>
-          <p>Material for compliance, legal, data, cybersecurity and industrial professionals.</p>
-        </article>
+    <!-- Audience -->
+
+    <section class="control-row audience-row">
+
+      <div class="row-identity">
+
+        <div class="row-icon">
+          ◎
+        </div>
+
+        <div class="row-heading">
+
+          <span class="row-kicker">
+            Who it is for
+          </span>
+
+          <h2>
+            Tailored<br>
+            insights by role
+          </h2>
+
+          <p>
+            Structured views for different needs<br>
+            across the tech regulation landscape.
+          </p>
+
+        </div>
+
       </div>
 
-      <div class="level-list">
-        <div>
-          <strong>Beginner</strong>
-          <span>Concept explanations, glossary, examples</span>
+
+      <div class="row-content">
+
+        <div class="role-grid">
+
+          <article class="role-card">
+
+            <div class="role-icon">&lt;/&gt;</div>
+
+            <div>
+              <h3>AI developers</h3>
+              <p>
+                Understand requirements<br>
+                and build with confidence.
+              </p>
+            </div>
+
+            <span class="role-arrow">›</span>
+
+          </article>
+
+
+          <article class="role-card">
+
+            <div class="role-icon">▦</div>
+
+            <div>
+              <h3>Companies</h3>
+              <p>
+                Stay compliant and<br>
+                manage regulatory risk.
+              </p>
+            </div>
+
+            <span class="role-arrow">›</span>
+
+          </article>
+
+
+          <article class="role-card">
+
+            <div class="role-icon">◇</div>
+
+            <div>
+              <h3>Students</h3>
+              <p>
+                Learn and explore the<br>
+                regulatory landscape.
+              </p>
+            </div>
+
+            <span class="role-arrow">›</span>
+
+          </article>
+
+
+          <article class="role-card">
+
+            <div class="role-icon">●</div>
+
+            <div>
+              <h3>Specialists</h3>
+              <p>
+                Deep insights for legal,<br>
+                policy and compliance.
+              </p>
+            </div>
+
+            <span class="role-arrow">›</span>
+
+          </article>
+
         </div>
-        <div>
-          <strong>Intermediate</strong>
-          <span>Obligations, functions, timelines, process mapping</span>
-        </div>
-        <div>
-          <strong>Advanced</strong>
-          <span>Controls, evidence, KPIs, dashboards, standards</span>
-        </div>
-        <div>
-          <strong>Expert / industry</strong>
-          <span>Implementation architecture, audit logic and sector cases</span>
-        </div>
+
       </div>
+
     </section>
 
-    <section id="scope" class="section">
-      <h2>Initial regulatory scope</h2>
-      <p>
-        TechReg starts with the core EU digital regulation stack affecting AI,
-        data, cybersecurity and industrial organisations.
-      </p>
 
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Instrument</th>
-              <th>Main focus</th>
-              <th>Why it matters</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>EU AI Act</td>
-              <td>AI classification, high-risk systems, documentation, transparency and oversight</td>
-              <td>Core framework for AI governance and implementation readiness.</td>
-            </tr>
-            <tr>
-              <td>GDPR</td>
-              <td>Personal data, lawful basis, DPIA, rights and automated processing</td>
-              <td>Applies whenever AI or digital systems process personal data.</td>
-            </tr>
-            <tr>
-              <td>NIS2 Directive</td>
-              <td>Cybersecurity risk management, incident reporting and supply-chain security</td>
-              <td>Important for energy, industrial and other critical sectors.</td>
-            </tr>
-            <tr>
-              <td>Cyber Resilience Act</td>
-              <td>Secure digital products, vulnerabilities, updates and conformity</td>
-              <td>Relevant for software, connected products and industrial digital tools.</td>
-            </tr>
-            <tr>
-              <td>Data Act</td>
-              <td>Connected-product data, IoT data access, data sharing and portability</td>
-              <td>Important for industrial data, smart devices and predictive maintenance.</td>
-            </tr>
-            <tr>
-              <td>Machinery Regulation</td>
-              <td>Safety, software in machinery, AI-enabled systems and conformity assessment</td>
-              <td>Relevant when AI or software enters machinery and industrial equipment.</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- Regulations -->
+
+    <section id="regulations" class="control-row regulations-row">
+
+      <div class="row-identity">
+
+        <div class="row-icon">
+          ▣
+        </div>
+
+        <div class="row-heading">
+
+          <span class="row-kicker">
+            Key regulations at a glance
+          </span>
+
+          <h2>
+            Key regulations<br>
+            at a glance
+          </h2>
+
+          <p>
+            Track the most relevant European<br>
+            technology regulations in one place.
+          </p>
+
+        </div>
+
       </div>
+
+
+      <div class="row-content">
+
+        <div class="regulation-grid">
+
+          <article class="regulation-card">
+
+            <div class="regulation-icon">
+              ▣
+            </div>
+
+            <div>
+              <h3>EU AI Act</h3>
+              <p>Implementation phase</p>
+            </div>
+
+            <span class="regulation-arrow">›</span>
+
+          </article>
+
+
+          <article class="regulation-card">
+
+            <div class="regulation-icon">
+              ◇
+            </div>
+
+            <div>
+              <h3>NIS2 Directive</h3>
+              <p>Practical guidance</p>
+            </div>
+
+            <span class="regulation-arrow">›</span>
+
+          </article>
+
+
+          <article class="regulation-card">
+
+            <div class="regulation-icon">
+              ◫
+            </div>
+
+            <div>
+              <h3>Data Act</h3>
+              <p>Growing relevance</p>
+            </div>
+
+            <span class="regulation-arrow">›</span>
+
+          </article>
+
+
+          <article class="regulation-card">
+
+            <div class="regulation-icon">
+              ▤
+            </div>
+
+            <div>
+              <h3>Cyber Resilience Act</h3>
+              <p>Product cybersecurity</p>
+            </div>
+
+            <span class="regulation-arrow">›</span>
+
+          </article>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <section id="workflow" class="section">
-      <h2>How it works</h2>
-      <p>
-        TechReg is designed as a structured workflow from official regulatory sources
-        to practical implementation support.
-      </p>
 
-      <div class="workflow">
-        <div class="workflow-step">
-          <span>1</span>
-          <h3>Register documents</h3>
-          <p>Collect official EU, national authority and guidance documents in a controlled source register.</p>
+    <!-- Workflow -->
+
+    <section id="workflow" class="control-row workflow-row">
+
+      <div class="row-identity">
+
+        <div class="row-icon">
+          ⚙
         </div>
 
-        <div class="workflow-step">
-          <span>2</span>
-          <h3>Extract obligations</h3>
-          <p>Translate legal and technical requirements into obligations, functions and business processes.</p>
+        <div class="row-heading">
+
+          <span class="row-kicker">
+            From regulation to implementation
+          </span>
+
+          <h2>
+            From regulation<br>
+            to implementation
+          </h2>
+
+          <p>
+            Turn complex regulatory information<br>
+            into structured practical action.
+          </p>
+
         </div>
 
-        <div class="workflow-step">
-          <span>3</span>
-          <h3>Assess organisations</h3>
-          <p>Match obligations with company profile, sector, AI use cases and cybersecurity exposure.</p>
-        </div>
-
-        <div class="workflow-step">
-          <span>4</span>
-          <h3>Map controls</h3>
-          <p>Define controls, evidence requirements, owners and management KPIs.</p>
-        </div>
-
-        <div class="workflow-step">
-          <span>5</span>
-          <h3>Support decisions</h3>
-          <p>Use dashboards and a future source-based RAG assistant to support implementation.</p>
-        </div>
       </div>
+
+
+      <div class="row-content">
+
+        <div class="workflow-grid">
+
+          <article class="workflow-card">
+
+            <div class="workflow-icon">◉</div>
+
+            <div>
+              <h3>Monitor</h3>
+              <p>
+                Track signals and<br>
+                early developments.
+              </p>
+            </div>
+
+            <span class="workflow-arrow">›</span>
+
+          </article>
+
+
+          <article class="workflow-card">
+
+            <div class="workflow-icon">⌕</div>
+
+            <div>
+              <h3>Analyse</h3>
+              <p>
+                Understand impact<br>
+                and obligations.
+              </p>
+            </div>
+
+            <span class="workflow-arrow">›</span>
+
+          </article>
+
+
+          <article class="workflow-card">
+
+            <div class="workflow-icon">▤</div>
+
+            <div>
+              <h3>Prepare</h3>
+              <p>
+                Access practical<br>
+                guidance and resources.
+              </p>
+            </div>
+
+            <span class="workflow-arrow">›</span>
+
+          </article>
+
+
+          <article class="workflow-card">
+
+            <div class="workflow-icon">⚙</div>
+
+            <div>
+              <h3>Implement</h3>
+              <p>
+                Apply insights<br>
+                in your organisation.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <section id="modules" class="section">
-      <h2>Planned modules</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Document register</h3>
-          <p>A controlled list of official regulatory sources and guidance documents.</p>
-        </article>
-        <article class="card">
-          <h3>Obligation matrix</h3>
-          <p>Regulation mapped to business processes, data needs, controls and evidence.</p>
-        </article>
-        <article class="card">
-          <h3>Concept explainer</h3>
-          <p>Plain-language explanations from beginner to expert level.</p>
-        </article>
-        <article class="card">
-          <h3>RAG assistant</h3>
-          <p>A future source-based assistant answering only from the approved document corpus.</p>
-        </article>
+
+    <!-- Observatory/status -->
+
+    <section id="status" class="control-row status-row">
+
+      <div class="row-identity">
+
+        <div class="row-icon">
+          ▥
+        </div>
+
+        <div class="row-heading">
+
+          <span class="row-kicker">
+            Building a complete observatory
+          </span>
+
+          <h2>
+            Building a complete<br>
+            observatory
+          </h2>
+
+          <p>
+            A growing platform with expanding<br>
+            coverage and capabilities.
+          </p>
+
+        </div>
+
       </div>
-    </section>
 
-    <section class="section">
-      <h2>Future dashboard logic</h2>
-      <p>
-        The platform will progressively convert regulatory obligations into measurable indicators
-        for management, compliance, legal, data, cybersecurity and operational teams.
-      </p>
 
-      <div class="kpi-grid">
-        <div><strong>Documents tracked</strong><span>official sources under monitoring</span></div>
-        <div><strong>Obligations mapped</strong><span>requirements translated into actions</span></div>
-        <div><strong>Controls defined</strong><span>implementation and evidence controls</span></div>
-        <div><strong>Gaps identified</strong><span>missing actions, data or documentation</span></div>
+      <div class="row-content status-content">
+
+        <div class="status-tools">
+
+          <article class="status-card">
+
+            <div class="status-icon">◫</div>
+
+            <div>
+              <h3>Expanded regulation coverage</h3>
+              <p>
+                More topics, sectors and cross-cutting areas.
+              </p>
+            </div>
+
+            <span>›</span>
+
+          </article>
+
+
+          <article class="status-card">
+
+            <div class="status-icon">⌘</div>
+
+            <div>
+              <h3>New tools and resources</h3>
+              <p>
+                Templates, trackers and implementation support.
+              </p>
+            </div>
+
+            <span>›</span>
+
+          </article>
+
+
+          <article class="status-card">
+
+            <div class="status-icon">▥</div>
+
+            <div>
+              <h3>Deeper insights and analysis</h3>
+              <p>
+                Expert analysis and comparative views.
+              </p>
+            </div>
+
+            <span>›</span>
+
+          </article>
+
+        </div>
+
+
+        <div class="progress-panel">
+
+          <span class="progress-title">
+            Current progress and next steps
+          </span>
+
+          <div class="progress-line">
+
+            <div class="progress-stage completed">
+              <span class="progress-dot">✓</span>
+              <small>
+                Core regulations<br>
+                live
+              </small>
+            </div>
+
+            <div class="progress-connector"></div>
+
+            <div class="progress-stage current">
+              <span class="progress-dot"></span>
+              <small>
+                More tools<br>
+                in development
+              </small>
+            </div>
+
+            <div class="progress-connector future"></div>
+
+            <div class="progress-stage future">
+              <span class="progress-dot"></span>
+              <small>
+                Additional sectors<br>
+                coming soon
+              </small>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-    </section>
 
-    <section id="status" class="section status">
-      <h2>Status</h2>
-      <p>
-        Early public prototype. The current phase focuses on the website structure,
-        regulatory document register and proof-of-work repository.
-      </p>
-      <p>
-        GitHub repository:
-        <a href="https://github.com/Mircea11/techreg">github.com/Mircea11/techreg</a>
-      </p>
     </section>
 
   </main>
 
-  <footer>
-    <p>TechReg by Sinapsa — early prototype</p>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer class="site-footer">
+
+    <div class="footer-brand">
+      <span class="brand-tech">Tech</span><span class="brand-reg">Reg</span>
+    </div>
+
+    <div>
+      European technology regulation intelligence
+    </div>
+
+    <div class="footer-links">
+      <a href="#mission">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+      <a href="#">Accessibility</a>
+    </div>
+
   </footer>
 
 </body>
